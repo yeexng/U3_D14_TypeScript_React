@@ -15,7 +15,7 @@ const ArticlesComponent = ({ articles }: ArticlesComponentProps) => {
         <Card.Img variant="top" src={articles.imageUrl} />
         <Card.Body>
           <Card.Title>{articles.title}</Card.Title>
-          <Card.Text>{articles.summary}</Card.Text>
+          {/* <Card.Text>{articles.summary}</Card.Text> */}
           <Button
             variant="primary"
             onClick={() => {

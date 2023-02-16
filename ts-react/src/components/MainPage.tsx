@@ -13,9 +13,6 @@ const MainPageComponent = () => {
             We'll be updating our news 24/7.. Who knows, you might be the next
             lucky one to be reported on our news...
           </p>
-          <p>
-            <Button variant="primary">Learn more</Button>
-          </p>
         </Container>
       </Jumbotron>
       <FetchArticleComponent />
