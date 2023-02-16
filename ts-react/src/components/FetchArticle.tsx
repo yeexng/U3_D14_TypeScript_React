@@ -28,14 +28,14 @@ const FetchArticleComponent = () => {
 
   return (
     <Container>
-      <Row>
+      <Row className="justify-content-center">
         <Col>
-          <h3>Trending Articles...</h3>
+          <h3 className="text-light">Trending Articles...</h3>
         </Col>
       </Row>
-      <Row>
+      <Row className="justify-content-center">
         {articles.map((a) => (
-          <Col md={4} key={a.id}>
+          <Col xs={12} sm={6} md={4} key={a.id} className="my-3 h-100">
             <ArticlesComponent articles={a} />
           </Col>
         ))}

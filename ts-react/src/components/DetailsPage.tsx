@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { IArticles } from "../interfaces/IArticles";
 import { Container, Row, Col, Card, Spinner } from "react-bootstrap";
+import { format, parseISO } from 'date-fns';
 
 const DetailsPage = () => {
   const URL = "https://api.spaceflightnewsapi.net/v3/articles/";
@@ -33,12 +34,14 @@ const DetailsPage = () => {
       {fullArticles ? (
         <Container>
           <Row>
-            <Col>
+            <Col className="my-5">
               <Card>
                 <Card.Img variant="top" src={fullArticles.imageUrl} />
                 <Card.Body>
                   <Card.Title>{fullArticles.title}</Card.Title>
-                  <Card.Text>{fullArticles.url}</Card.Text>
+                  <span>by {fullArticles.newsSite} on {format(parseISO(fullArticles.publishedAt.toString()), 'dd.MM.yyyy')}</span>
+                  <hr></hr>
+                  <Card.Text>{fullArticles.summary}</Card.Text>
                 </Card.Body>
               </Card>
             </Col>

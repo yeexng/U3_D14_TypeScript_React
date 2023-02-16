@@ -11,8 +11,8 @@ const ArticlesComponent = ({ articles }: ArticlesComponentProps) => {
 
   return (
     <div>
-      <Card>
-        <Card.Img variant="top" src={articles.imageUrl} />
+      <Card style={{ height:'400px'}}>
+        <Card.Img className="img-fluid" variant="top" src={articles.imageUrl}  style={{ height:'230px'}}/>
         <Card.Body>
           <Card.Title>{articles.title}</Card.Title>
           {/* <Card.Text>{articles.summary}</Card.Text> */}
@@ -22,7 +22,7 @@ const ArticlesComponent = ({ articles }: ArticlesComponentProps) => {
               navigate(`/${articles.id}`);
             }}
           >
-            Read more...
+            Full Article...
           </Button>
         </Card.Body>
       </Card>

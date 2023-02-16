@@ -7,6 +7,8 @@ import DetailsPage from "./components/DetailsPage";
 
 function App() {
   return (
+    <div className="main-body">
+
     <BrowserRouter>
       <NavBarComponent />
       <div>
@@ -16,6 +18,7 @@ function App() {
         </Routes>
       </div>
     </BrowserRouter>
+    </div>
   );
 }
 
