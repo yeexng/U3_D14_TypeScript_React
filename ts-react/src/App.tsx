@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import MainPageComponent from "./components/MainPage";
 import NavBarComponent from "./components/NavBar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import DetailsPage from "./components/DetailsPage";
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <div>
         <Routes>
           <Route path="/" element={<MainPageComponent />} />
-          <Route path="/:id" element={<MainPageComponent />} />
+          <Route path="/:id" element={<DetailsPage />} />
         </Routes>
       </div>
     </BrowserRouter>

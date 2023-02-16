@@ -6,10 +6,12 @@ const MainPageComponent = () => {
     <>
       <Jumbotron>
         <Container>
-          <h1>Hello, world!</h1>
+          <h1>SamNews tell you all the B#115H17s around the world!!</h1>
           <p>
-            This is a simple hero unit, a simple jumbotron-style component for
-            calling extra attention to featured content or information.
+            If you're interested in what's wrong with the man kind, whole stole
+            the granny's purse!! Make sure to check out our News Website...
+            We'll be updating our news 24/7.. Who knows, you might be the next
+            lucky one to be reported on our news...
           </p>
           <p>
             <Button variant="primary">Learn more</Button>

@@ -16,7 +16,12 @@ const ArticlesComponent = ({ articles }: ArticlesComponentProps) => {
         <Card.Body>
           <Card.Title>{articles.title}</Card.Title>
           <Card.Text>{articles.summary}</Card.Text>
-          <Button variant="primary" onClick={navigate("/:id")}>
+          <Button
+            variant="primary"
+            onClick={() => {
+              navigate(`/${articles.id}`);
+            }}
+          >
             Read more...
           </Button>
         </Card.Body>
